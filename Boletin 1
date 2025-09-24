@@ -18,6 +18,7 @@ let nulo = null;
 console.log(nulo);
 let nada;
 console.log(nada);
+console.log("------------------")
 //4.Modifica los valores de las variables por otros valores y vuelve a imprimirlos en la consola.
 cadena = "Pedroo";
 console.log(cadena);
@@ -27,6 +28,7 @@ decimal = 2.6;
 console.log(decimal);
 buleano = false;
 console.log(buleano);
+console.log("------------------")
 //5. Declara constantes con valores asociados a todos los tipos de datos y imprimelos en la consola.
 const elNombre = "Pedro";
 console.log(elNombre);
@@ -38,6 +40,7 @@ const elBuleano = true;
 console.log(elBuleano);
 const elNulo = null;
 console.log(elNulo);
+console.log("------------------")
 //6. Crea una variable para cada operador aritmetico y muestra su resultado en la consola.
 
 //7. Crea una variable para cada operador de asignacion y muestra su resultado en la consola.
