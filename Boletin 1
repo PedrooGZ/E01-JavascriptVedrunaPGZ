@@ -18,7 +18,7 @@ let nulo = null;
 console.log(nulo);
 let nada;
 console.log(nada);
-console.log("------------------")
+console.log("------------------");
 //4.Modifica los valores de las variables por otros valores y vuelve a imprimirlos en la consola.
 cadena = "Pedroo";
 console.log(cadena);
@@ -28,7 +28,7 @@ decimal = 2.6;
 console.log(decimal);
 buleano = false;
 console.log(buleano);
-console.log("------------------")
+console.log("------------------");
 //5. Declara constantes con valores asociados a todos los tipos de datos y imprimelos en la consola.
 const elNombre = "Pedro";
 console.log(elNombre);
@@ -40,55 +40,201 @@ const elBuleano = true;
 console.log(elBuleano);
 const elNulo = null;
 console.log(elNulo);
-console.log("------------------")
+console.log("------------------");
 //6. Crea una variable para cada operador aritmetico y muestra su resultado en la consola.
-
+let suma = 2+2;
+console.log(suma);
+let resta = 2-2;
+console.log(resta);
+let multi = 2*2;
+console.log(multi);
+let div = 2/2;
+console.log(div);
+let mod = 2%2;
+console.log(mod)
+let decre = 2;
+console.log(--decre)
+let incre = 2;
+console.log(++decre)
+console.log("------------------");
 //7. Crea una variable para cada operador de asignacion y muestra su resultado en la consola.
-
+let asig = 5;
+asig +=2;
+asig -=2;
+console.log(asig);
+console.log("------------------");
 //8. Crea una variable para cada operador de comparacion y muestra su resultado en la consola.
-
+let c=5;
+let d="5";
+console.log(c===d);//false debido a que con tres iguales se compara el valor y el tipo
+console.log(c==d);//true debido a que con dos iguales se compara el valor y no el tipo
+console.log(c!=d);//false c es igual a d por que se compara el valor y no el tipo
+console.log(c!==d);//true c es distinto a d si comparamos el valor y el tipo
+console.log(c>d);
+console.log(c<d);
+console.log(c>=d);
+console.log(c<=d);
+console.log(undefined==null);//true debido a que con dos iguales se compara el valor y no el tipo
+console.log(undefined===null);//false debido a que con tres iguales se compara el valor y el tipo
+console.log("------------------");
 //9. Crea una variable pcon un operador lógico y muestra su resultado en la consola.(AND y OR)
-
+console.log(5>10 && 15>20);//false
+console.log(5<10 || 15>20);//true
+console.log(!(5>10 || 15>20));//true por que niega el resultado anterior
+console.log("------------------");
 //10. Crea una variable con un operador ternario y muestra su resultado en la consola.
-
+let edad=18;
+// ? si es verdadero : si es falso
+let mensaje=edad>=18? "Eres mayor de edad":"Eres menor de edad";
+console.log(mensaje);
+console.log("------------------");
 //11. Concatena dos cadenas de texto y muestra el resultado en la consola.
-
+let mensaje1 = "Este es el";
+let mensaje2 =" mensaje concatenado";
+console.log(mensaje1+mensaje2);
+console.log("------------------");
 //12. Transforma una cadena de texto en mayúsculas y muestra el resultado en la consola.
-
+let mayus = mensaje1.toUpperCase();
+console.log(mayus);
+console.log("------------------");
 //13. Muestra la longitud de una cadena de texto en la consola.
-
+console.log(mayus.length);
+console.log("------------------");
 //14. Remplaza un el espacio de una cadena por un guión y muestra el resultado en la consola.
-
+let cadi = "Esta es la cadena";
+let cad = cadi.replaceAll(" ","-");
+console.log(cad);
+console.log("------------------");
 //15. Comprueba si un String contiene una palabra en concreto y muestra el resultado en la consola.
-
+let contenedor = "Aqui tenemos la cadena de ejemplo";
+let pepe = contenedor.includes("tenemos");
+console.log(pepe);
+console.log("------------------");
 //17. Investiga algun metodo mas utilizado con String y muestra el resultado en la consola.
-
+console.log(contenedor.slice(1,6));
+console.log("------------------");
 //18. Imprime tu nombre si una varibale tiene su valor
+let num = 3; 
+if (num=3){
+    console.log("Pedro");
 
+} else{
+    console.log("Otro nombre");
+}
+console.log("------------------");
 //19. Imprime acceso permitido si un variable nombre y su contraseña son correctos
+let nombre = "Pedro"; 
+let contra = "3333";
+if (nombre=="Pedro" && contra=="123"){
+    console.log("Acceso permitido");
 
+} else{
+    console.log("Acceso denegado");
+}
+console.log("------------------");
 //20. Imprime en que estacion del año estamos a partir de una variable que indique el mes
-
+let mes = 12;
+switch (mes) {
+    case 1:
+        console.log('Enero');
+        break;
+    case 2:
+        console.log('Febrero');
+        break;
+    case 3:
+        console.log('Marzo');
+        break;
+    case 4:
+        console.log('Abril');
+        break;
+    case 5:
+        console.log('Mayo');
+        break;
+    case 6:
+        console.log('Junio');
+        break;
+    case 7:
+        console.log('Julio');
+        break;
+    case 8:
+        console.log('Agosto');
+        break;
+    case 9:
+        console.log('Septiembre');
+        break;
+    case 10:
+        console.log('Octubre');
+        break;
+    case 11:
+        console.log('Noviembre');
+        break;
+    case 12:
+        console.log('Diciembre');
+        break;
+    default:
+        console.log('No es ningún mes');
+        break;
+}
+console.log("------------------");
 //21. Usa switch rehaciendo el ejercicio 20
 
 //22. Crea un listado que almacene cinco elementos.
-
+let lista = [1,2,3,4,5];
+console.log(lista);
+console.log("------------------");
 //23. A ese listado incluye uno al principio y uno al final.
-
+lista.unshift(0);
+lista.push(6);
+console.log(lista);
+console.log("------------------");
 //24. Elimina el último elemento del listado.
-
+lista.pop();
+console.log(lista);
+console.log("------------------");
 //24. Crea un Set que guarde cinco elementos.
-
+let seteo = new Set(["Cadiz","Sevilla","Nimega","Eindhoven","La Isla"]);
+console.log(seteo);
+console.log("------------------");
 //26.Crea un mapa que como clave tenga un numero y como valor el mes.
-
+let meses = new Map([
+    ['1', 'Enero'],
+    ['2', 'Febrero'],
+    ['3', 'Marzo']
+]);
+console.log(meses);
+console.log("------------------");
 //27. Crea un bucle que imprima numero del 1 al 10
-
+for(let i = 1; i<=10;i++){
+    console.log(i);
+}
+console.log("------------------");
 //28. Crea un bucle que cuente las vocales de una cadena de texto
-
+let cadenita = "Esta es mi cadena";
+let contador = 0; 
+let vocales= "aeiou";
+for(let i =0; i<cadenita.length;i++){
+    if(vocales.includes(cadenita.toLocaleLowerCase().charAt(i))){
+        contador++;
+    }
+}
+console.log("Hay "+contador+" vocales")
+console.log("------------------");
 //29. Usa un bucle para invertir una cadena de texto
-
+let texto = "YouTube";
+let invertido = texto.split("").reverse().join("");
+console.log(invertido);
+console.log("------------------");
 //30. Crea un funcion que reciba dos numeros y los sume
-
+function sumar(num1,num2){
+  return num1 + num2;
+}
+console.log(sumar(5, 7));
+console.log("------------------");
 //31. Crea una funcion que reciba un Array de Strings y devuelve un nuevo array solo con las letras mayusculas del Array original
 
 //32. Crea una funcion que reciba un String y devuelva la candena al reves
+function darVuelta(textito){
+  return textito.split("").reverse().join("");
+}
+console.log(darVuelta("ordeP"));
+console.log("------------------");
