@@ -231,6 +231,13 @@ function sumar(num1,num2){
 console.log(sumar(5, 7));
 console.log("------------------");
 //31. Crea una funcion que reciba un Array de Strings y devuelve un nuevo array solo con las letras mayusculas del Array original
+function poneMayus(array){
+    return array.map(str => str.toUpperCase());
+}
+let frutas = ["manzana","banana","naranja"];
+let FRUTAS = poneMayus(frutas);
+console.log(FRUTAS);
+console.log("------------------");
 
 //32. Crea una funcion que reciba un String y devuelva la candena al reves
 function darVuelta(textito){
